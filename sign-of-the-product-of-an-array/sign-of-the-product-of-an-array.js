@@ -2,9 +2,10 @@
  * @param {number[]} nums
  * @return {number}
  */
-var arraySign = function(nums) {
+ 
+var arraySign = function(a) {
     var n = false
-    for (let i of nums) {
+    for (let i of a) {
         if (i === 0) {
             return 0
         } 
