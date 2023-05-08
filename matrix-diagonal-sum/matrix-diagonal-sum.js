@@ -5,7 +5,7 @@
 var diagonalSum = function(mat) {
     var count = 0
     for (let i = 0; i < mat[0].length; i++) {
-        if (i === (mat[0].length-1)-i) {
+        if (i === (mat[0].length-1)/2) {
             count += mat[i][i]
         } else {
             count += mat[i][i]
