@@ -4,15 +4,14 @@
  */
 var diagonalSum = function(mat) {
     var count = 0
-    var len = mat[0].length
-    for (let i = 0; i < (len)/2; i++) {
-        if (i === (len-1)/2) {
+    for (let i = 0; i < (mat[0].length)/2; i++) {
+        if (i === (mat[0].length-1)/2) {
             count += mat[i][i]
         } else {
             count += mat[i][i]
-            count += mat[(len-1)-i][i]
-            count += mat[i][(len-1)-i]
-            count += mat[(len-1)-i][(len-1)-i]
+            count += mat[(mat[0].length-1)-i][i]
+            count += mat[i][(mat[0].length-1)-i]
+            count += mat[(mat[0].length-1)-i][(mat[0].length-1)-i]
         }
     }
     return count
